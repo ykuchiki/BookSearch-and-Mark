@@ -1,0 +1,52 @@
+<!doctype html>
+ 
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    
+    <script src="sub.js"></script>
+    
+    
+    <title>本検索保存</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/phi-jp/meltline@v0.1.13/meltline.css">
+    <script src='https://cdn.jsdelivr.net/gh/phi-jp/firerest@v0.1.4/firerest.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.12.0/underscore-min.js'></script>
+    <style>
+    body{
+    background-image: url(bg.png);
+    background-repeat: repeat
+    }
+    </style>
+    <link rel="stylesheet" type="text/css" href="./main.css" />
+  </head>
+  <body class='p16'>
+  <br><br><br>
+  <header>
+  	<ul>
+  		<li><a href="index.html" class="btn4">Search</a></li>
+  		<li><a href="mark.html" class="btn2">Mark</a></li>
+  	</ul>
+  </header>
+    <h1 class='mb16' id="title-element"></h1>
+
+<div class="search-container">
+    <div class="button2">
+    <input type="button" value="削除" id="deleteAll">
+    </div>
+    <label>　※ブックマークされた本が全部削除されます</label>
+</div>
+    <div>
+      <h2 class='mb8'>Book Mark</h2>
+      <div id='hist'></div>
+    </div>
+    
+    <script>
+    const title ="Book Search and Mark";
+    const titleElement = document.getElementById("title-element");
+    titleElement.innerText = title;
+    </script>
+  </body>
+</html>
